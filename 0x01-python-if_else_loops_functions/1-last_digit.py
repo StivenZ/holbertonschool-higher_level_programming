@@ -12,5 +12,5 @@ if last_digit > 5:
     print("Last digit of", number, "is", last_digit, string1)
 elif last_digit == 0:
     print("Last digit of", number, "is", last_digit, "and is 0")
-else:
+elif last_digit < 6 and last_digit != 0:
     print("Last digit of", number, "is", last_digit, s2)
