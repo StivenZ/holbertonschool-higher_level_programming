@@ -9,8 +9,8 @@ else:
     last_digit = number % 10
 
 if last_digit > 5:
-    print("Last digit of ", number, " is ", last_digit, string1)
+    print("Last digit of", number, "is", last_digit, string1)
 elif last_digit == 0:
-    print("Last digit of ", number, " is ", last_digit, " and is 0")
+    print("Last digit of", number, "is", last_digit, "and is 0")
 else:
-    print("Last digit of ", number, " is ", last_digit, s2)
+    print("Last digit of", number, "is", last_digit, s2)
