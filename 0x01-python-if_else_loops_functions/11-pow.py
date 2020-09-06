@@ -9,5 +9,5 @@ def pow(a, b):
         return(power)
     elif b < 0:
         for i in range(abs(b)):
-            power = (1.0/a) * power
+            power = (1/a) * power
         return(power)
