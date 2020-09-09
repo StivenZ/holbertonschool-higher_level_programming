@@ -13,7 +13,7 @@ def no_c(my_string):
     # return newstr
 
     string_list = list(my_string)
-    for i in list(my_string):
+    for i in string_list:
         if i == 'c' or i == 'C':
             string_list.remove(i)
     new_string = "".join(string_list)
