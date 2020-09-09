@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if len(matrix) == 1 and not matrix[0]:
-        print("")
-    elif matrix:
+    if not matrix[0]:
+        print()
+    else:
         for a in matrix:
             for idx, l in enumerate(a):
                 if idx != len(a) - 1:
