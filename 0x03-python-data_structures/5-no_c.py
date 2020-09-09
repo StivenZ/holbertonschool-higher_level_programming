@@ -9,13 +9,12 @@ def no_c(my_string):
     # newstr = ""
     # for char in my_string:
     #     if char != 'C' and char != 'c':
-    #         mystr += char
+    #         newstr += char
     # return newstr
 
-    if my_string:
-        string_list = list(my_string)
-        for i in list(my_string):
-            if i == 'c' or i == 'C':
-                string_list.remove(i)
-        new_string = "".join(string_list)
+    string_list = list(my_string)
+    for i in list(my_string):
+        if i == 'c' or i == 'C':
+            string_list.remove(i)
+    new_string = "".join(string_list)
     return(new_string)
