@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Empty class about squares"""
+"""Square class with private instance"""
 
 
 class Square:
-    """Empty class about squares"""
+    """Square class with private instance"""
     def __init__(self, size=0):
         self.__size = size
         if not type(size) is int:
