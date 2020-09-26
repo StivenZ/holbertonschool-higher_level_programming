@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
-    elif len(matrix[0]) == 0:
+    elif len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists) \
 of integers/floats")
 
