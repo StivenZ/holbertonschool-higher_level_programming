@@ -26,11 +26,11 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     elif len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists) \
-            of integers/floats")
+        of integers/floats")
 
     for i, row in enumerate(matrix):
         if type(row) != list:
-            raise TypeError("matrix must be a matrix (list of lists)\
+        raise TypeError("matrix must be a matrix (list of lists)\
                 of integers/floats")
         if len(check_row) != 0:
             if len(row) not in check_row:
@@ -41,6 +41,6 @@ def matrix_divided(matrix, div):
         for j, item in enumerate(row):
             if type(item) not in [int, float]:
                 raise TypeError("matrix must be a matrix (list of lists) \
-                    of integers/floats")
+                of integers/floats")
             copy_matrix[i].append(round((matrix[i][j] / div), 2))
     return (copy_matrix)
