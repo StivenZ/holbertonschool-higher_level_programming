@@ -1,0 +1,34 @@
+Integers addition module
+===========================
+Function
+========.
+function that adds 2 integers.
+Operations
+==========
+a and b must be integers or floats, otherwise raise a TypeError exception
+with the message a must be an integer or b must be an integer:
+
+Import module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Uses:
+
+Should return an error when cannot convert float NaN to integer:
+    >>> add_integer(float("NaN"), 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+Should return the sum of two integers:
+    >>> add_integer(7, 5)
+    12
+
+Should return an integer from the sum of a = float, b = integer:
+    >>> add_integer(5.0, 3)
+    8
+
+return an error when is passed a None:
+    >>> add_integer(None, 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
