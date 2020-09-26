@@ -24,13 +24,13 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
-    elif len(matrix) == 0:
-        raise TypeError("matrix must be a matrix (list of lists)\
+    elif len(matrix[0]) == 0:
+        raise TypeError("matrix must be a matrix (list of lists) \
 of integers/floats")
 
     for i, row in enumerate(matrix):
         if type(row) != list:
-            raise TypeError("matrix must be a matrix (list of lists)\
+            raise TypeError("matrix must be a matrix (list of lists) \
 of integers/floats")
         if len(check_row) != 0:
             if len(row) not in check_row:
