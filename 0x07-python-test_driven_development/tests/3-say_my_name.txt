@@ -1,0 +1,20 @@
+Say My Name
+===========================
+Function
+========.
+function that prints My name is <first name> <last name>
+Operations
+==========
+first_name and last_name must be strings otherwise, raise a TypeError 
+exception with the message first_name must be a string or last_name must be a string
+
+Import module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Uses:
+
+Should raise an TypeError when not a string is passed:
+    >>> say_my_name(3, "si3te")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
