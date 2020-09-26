@@ -31,16 +31,16 @@ def matrix_divided(matrix, div):
     for i, row in enumerate(matrix):
         if type(row) != list:
             raise TypeError("matrix must be a matrix (list of lists)\
-                of integers/floats")
+            of integers/floats")
         if len(check_row) != 0:
             if len(row) not in check_row:
                 raise TypeError("Each row of the matrix must \
-                have the same size")
+            have the same size")
         copy_matrix.append([])
         check_row.append(len(row))
         for j, item in enumerate(row):
             if type(item) not in [int, float]:
                 raise TypeError("matrix must be a matrix (list of lists) \
-                of integers/floats")
+            of integers/floats")
             copy_matrix[i].append(round((matrix[i][j] / div), 2))
     return (copy_matrix)
