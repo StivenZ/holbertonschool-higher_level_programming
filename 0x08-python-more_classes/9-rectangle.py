@@ -38,11 +38,19 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """Returns a perfect square
+
+        Args:
+            size (int, optional): square's size. Defaults to 0.
+
+        Returns:
+            [Rectangle]: A square
+        """
         return (cls, size, size)
 
     @property
     def width(self):
-        return (self.__width)
+        return (Rectangle(size, size))
 
     @width.setter
     def width(self, value):
