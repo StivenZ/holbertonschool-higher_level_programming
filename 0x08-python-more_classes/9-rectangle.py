@@ -46,7 +46,7 @@ class Rectangle:
         Returns:
             [Rectangle]: A square
         """
-        return (cls, size, size)
+        return cls(size, size)
 
     @property
     def width(self):
