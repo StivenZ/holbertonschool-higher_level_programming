@@ -53,6 +53,8 @@ class Rectangle:
 
     def __str__(self):
         sqr = ""
+        if self.__width == 0 or self.__height == 0:
+            return ("")
         for i in range(self.__height):
             if i != (self.__height - 1):
                 sqr = sqr + ("#" * self.__width) + "\n"
