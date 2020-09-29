@@ -62,9 +62,9 @@ class Rectangle:
             return (sqr)
         for i in range(self.__height):
             if i != (self.__height - 1):
-                sqr = sqr + (Rectangle.print_symbol * self.__width) + "\n"
+                sqr = sqr + (str(self.print_symbol) * self.__width) + "\n"
             else:
-                sqr = sqr + (Rectangle.print_symbol * self.__width)
+                sqr = sqr + (str(self.print_symbol) * self.__width)
         return (sqr)
 
     def __repr__(self):
