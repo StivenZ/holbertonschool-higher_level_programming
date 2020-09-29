@@ -55,10 +55,12 @@ class Rectangle:
         sqr = ""
         if (self.__height or self.__width) == 0:
             return (sqr)
-        else:
-            for i in range(self.__height):
+        for i in range(self.__height):
+            if i != (self.__height - 1):
                 sqr = sqr + ("#" * self.__width) + "\n"
-            return (sqr)
+            else:
+                sqr = sqr + ("#" * self.__width)
+        return (sqr)
 
     def __repr__(self):
         return (type(self).__name__ +
