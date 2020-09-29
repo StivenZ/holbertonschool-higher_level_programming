@@ -7,6 +7,14 @@ class Rectangle:
     """Generates an empty rectangle.
     """
     def __init__(self, width=0, heigth=0):
+        if type(heigth) is not int:
+            raise TypeError("heigth must be an integer")
+        if heigth < 0:
+            raise ValueError("heigth must be >= 0")
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
         self.__width = width
         self.__heigth = heigth
 
