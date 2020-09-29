@@ -50,3 +50,16 @@ class Rectangle:
             return (0)
         else:
             return ((self.__width * 2) + (self.__height * 2))
+
+    def __str__(self):
+        sqr = ""
+        if (self.__height or self.__width) == 0:
+            return (sqr)
+        else:
+            for i in range(self.__height):
+                sqr = sqr + ("#" * self.__width) + "\n"
+            return (sqr)
+
+    def __repr__(self):
+        return (type(self).__name__ +
+                "({}, {})".format(self.__width, self.__height))
