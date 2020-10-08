@@ -2,6 +2,7 @@
 """Reads and prints from a file
 """
 
+
 def read_file(filename=""):
     """Prints to stdout a file's content
 
@@ -10,4 +11,5 @@ def read_file(filename=""):
     """
 
     with open(filename, mode="r", encoding="utf-8") as myfile:
-        print(myfile.read())
+        data = myfile.read()
+        print(data)
