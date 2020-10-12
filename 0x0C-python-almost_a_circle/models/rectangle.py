@@ -16,3 +16,35 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         super().__init__(id)
+
+    @property
+    def width(self):
+        return (self.___width)
+
+    @width.setter
+    def width(self, value):
+        self.___width = value
+
+    @property
+    def height(self):
+        return (self.___height)
+
+    @height.setter
+    def height(self, value):
+        self.___height = value
+
+    @property
+    def x(self):
+        return (self.___x)
+
+    @x.setter
+    def x(self, value):
+        self.___x = value
+
+    @property
+    def y(self):
+        return (self.___y)
+
+    @y.setter
+    def y(self, value):
+        self.___y = value
