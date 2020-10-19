@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import json
 """Base class
 """
+import json
 
 
 class Base:
@@ -10,6 +10,8 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Initialization
+        """
         if id is not None:
             self.id = id
         else:
@@ -40,6 +42,14 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """turns to string from json
+
+        Args:
+            json_string ([type]): [description]
+
+        Returns:
+            [type]: [description]
+        """
         if json_string is None:
             return ([])
         else:
