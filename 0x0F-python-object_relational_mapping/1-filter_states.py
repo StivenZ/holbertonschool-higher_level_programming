@@ -7,7 +7,11 @@ if __name__ == '__main__':
     username, password, database = argv[1], argv[2], argv[3]
     db = sql.connect(host="localhost", db=database, user=username, passwd=password, port=3306)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
+    query = "SELECT * FROM states ORDER BY states.id"
+    cur.execute(query)
+
     for data in cur.fetchall():
-        print(data)
+        if data[1][0] == 'N':
+            print(data)
+
     db.close()
