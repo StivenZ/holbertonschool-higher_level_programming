@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Perform classification within a query: selects only results starting with 'N'
+"""
 
 if __name__ == '__main__':
     import MySQLdb as sql
