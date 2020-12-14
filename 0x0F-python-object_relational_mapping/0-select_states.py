@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Open a connection using mysql in python.
+"""
 
 if __name__ == '__main__':
     import MySQLdb as sql
