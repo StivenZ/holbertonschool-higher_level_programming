@@ -12,8 +12,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    query = ("SELECT * FROM states WHERE states.name = \
-            LIKE BINARY '{}';".format(s_name))
+    query = ("SELECT * FROM states WHERE states.name \
+LIKE BINARY '{}';".format(s_name))
     cur.execute(query)
     the_states = cur.fetchall()
 
