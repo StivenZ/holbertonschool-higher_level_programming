@@ -2,7 +2,6 @@
 """Module to append string into a file"""
 
 
-
 def append_write(filename="", text=""):
     """Append a string into a file"""
 

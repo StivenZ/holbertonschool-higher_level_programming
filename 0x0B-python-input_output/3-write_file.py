@@ -2,7 +2,6 @@
 """Module used to write to a given file"""
 
 
-
 def write_file(filename="", text=""):
     """Write certain text onto a file"""
 

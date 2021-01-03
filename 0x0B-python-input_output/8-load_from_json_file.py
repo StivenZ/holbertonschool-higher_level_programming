@@ -3,7 +3,6 @@
 import json
 
 
-
 def load_from_json_file(filename):
     """convert json file to python object"""
     with open(filename, "r", encoding="utf-8") as fd:
