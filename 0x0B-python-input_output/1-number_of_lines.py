@@ -3,8 +3,7 @@
 
 
 def number_of_lines(filename=""):
-    count = 0
+    """Opens a file and reads number of liens"""
     with open(filename, "r", encoding="utf-8") as fd:
-        for a in fd:
-            count = count + 1
-    return count
+        lines = fd.readlines()
+    return (len(lines))
