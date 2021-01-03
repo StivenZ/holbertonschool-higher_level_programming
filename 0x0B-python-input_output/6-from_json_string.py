@@ -4,5 +4,6 @@ import json
 
 
 def from_json_string(my_str):
+    """Return an object from a json file"""
     j = json.loads(my_str)
     return (j)
