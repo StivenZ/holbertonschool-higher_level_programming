@@ -13,9 +13,11 @@ class Student():
     def to_json(self, attrs=None):
         if attrs:
             new_dict = {}
+            if attrs is []:
+                return
             for atr in attrs:
                 if atr in self.__dict__:
                     new_dict[atr] = self.__dict__[atr]
             return (new_dict)
-        elif attrs is None or attrs == []:
+        elif attrs is None:
             return (self.__dict__)
