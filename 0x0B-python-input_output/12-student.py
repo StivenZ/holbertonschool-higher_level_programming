@@ -17,5 +17,5 @@ class Student():
                 if atr in self.__dict__:
                     new_dict[atr] = self.__dict__[atr]
             return (new_dict)
-        else:
+        elif attrs is None or attrs == []
             return (self.__dict__)
