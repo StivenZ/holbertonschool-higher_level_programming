@@ -21,6 +21,4 @@ class Student():
             return (self.__dict__)
 
     def reload_from_json(self, json):
-        for key, value in json.items():
-            if key in self.__dict__:
-                self.key = value
+        self.__dict__.update(json)
