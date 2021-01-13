@@ -43,21 +43,19 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """turns to string from json
-
         Args:
             json_string ([type]): [description]
 
         Returns:
-            [type]: [description]
-        """
-        if json_string is None:
+            [type]: [description]"""
+        if json_string is None or len(json_string) == 0:
             return ([])
         else:
             return (json.loads(json_string))
 
-    # @classmethod
-    # def create(cls, **dictionary):
-    #     if cls.__name__ == Square:
-    #         pass
-
-# new_instance = cls.__name__(1, 1)
+    @classmethod
+    def create(cls, **dictionary):
+        from models.rectangle import Rectangle
+        dummy = Rectangle(1, 1)
+        dummy.update(**dictionary)
+        return (dummy)
