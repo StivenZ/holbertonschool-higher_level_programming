@@ -57,6 +57,10 @@ class Base:
     def create(cls, **dictionary):
         """Creates an instance from a dictionary"""
         from models.rectangle import Rectangle
-        dummy = Rectangle(1, 1)
+        from models.square import Square
+        if dictionary["height"] == dictionary["width"]:
+            dummy = Square(1, 1)
+        else:
+            dummy = Rectangle(1, 1)
         dummy.update(**dictionary)
         return (dummy)
