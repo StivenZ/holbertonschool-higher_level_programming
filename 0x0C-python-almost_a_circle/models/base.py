@@ -58,9 +58,9 @@ class Base:
         """Creates an instance from a dictionary"""
         from models.rectangle import Rectangle
         from models.square import Square
-        if cls.__name__ == Square:
+        if cls.__name__ == "Square":
             dummy = Square(1)
-        elif cls.__name__ == Rectangle:
+        elif cls.__name__ == "Rectangle":
             dummy = Rectangle(1, 1)
         else:
             return
