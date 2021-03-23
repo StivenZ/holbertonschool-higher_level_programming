@@ -1,5 +1,11 @@
 #!/usr/bin/node
 const array = process.argv;
+const tamaño = process.argv.length;
+
+if (tamaño === 2 && tamaño === 3) {
+  console.log(0);
+  return;
+}
 
 let newArray = [];
 
