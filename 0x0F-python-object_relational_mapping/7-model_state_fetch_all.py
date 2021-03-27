@@ -16,5 +16,5 @@ Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
-for dispatch in session.query(State).order_by(State.id):
+for dispatch in session.query(State).order_by(State.id.asc()):
     print("{}: {}".format(dispatch.id, dispatch.name))
