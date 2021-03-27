@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Module on mysqldb"""
 if __name__ == "__main__":
+    """List results from 2 tables"""
     import MySQLdb
     import sys
 
