@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Module on mysqldb"""
 if __name__ == "__main__":
+    """Filter cities base on imput"""
     import MySQLdb
     import sys
 
