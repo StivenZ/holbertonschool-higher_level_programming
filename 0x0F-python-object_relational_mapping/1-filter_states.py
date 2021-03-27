@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+    """MySQLdb Query module
+    """
 if __name__ == "__main__":
+    """Filter query by starting character
+    """
     import MySQLdb
     import sys
     import re
