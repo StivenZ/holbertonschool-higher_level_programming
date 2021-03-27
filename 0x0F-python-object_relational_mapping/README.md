@@ -1,0 +1,1 @@
+Practice and studying differences between databases and ORM with python and MySQLAlchemy.
