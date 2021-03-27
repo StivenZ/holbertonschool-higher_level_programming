@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Module of 
-"""
+"""Module to connect to database"""
+
 if __name__ == "__main__":
-    """[summary]
+    """Executes query to database from user input
     """
     import MySQLdb
     import sys
