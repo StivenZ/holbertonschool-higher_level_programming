@@ -4,7 +4,6 @@ if __name__ == "__main__":
     """Filter state on user input"""
     import MySQLdb
     import sys
-    import re
 
     uname, psswd = sys.argv[1], sys.argv[2]
     db, state_name = sys.argv[3], sys.argv[4]
