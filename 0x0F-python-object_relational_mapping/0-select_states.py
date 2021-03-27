@@ -9,7 +9,7 @@ if __name__ == "__main__":
                          passwd=psswd, db=db, port=3306)
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY id")
+    cur.execute("SELECT * FROM states ORDER BY states.id")
     state = cur.fetchall()
     for states in state:
         print(states)
