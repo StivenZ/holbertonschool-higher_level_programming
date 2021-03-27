@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+"""Module on mysqldb"""
+
 if __name__ == "__main__":
+    """preventing sql injections"""
     import MySQLdb
     import sys
     import re
