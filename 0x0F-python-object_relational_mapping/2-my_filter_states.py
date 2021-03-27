@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""Module on MySQLdb"""
 if __name__ == "__main__":
+    """Filter state on user input"""
     import MySQLdb
     import sys
     import re
