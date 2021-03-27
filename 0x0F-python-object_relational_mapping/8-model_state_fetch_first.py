@@ -17,4 +17,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 my_query = session.query(State).first()
-print("{}: {}".format(my_query.id, my_query.name))
+if my_query is None:
+    print("Nothing")
+else:
+    print("{}: {}".format(my_query.id, my_query.name))
