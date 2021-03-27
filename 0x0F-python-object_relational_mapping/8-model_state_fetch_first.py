@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Module on mysql alchemy filter
+"""
 import sqlalchemy
 import sys
 from model_state import Base, State
