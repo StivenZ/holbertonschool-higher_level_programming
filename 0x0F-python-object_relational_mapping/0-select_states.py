@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import MySQLdb
+import sys
 if __name__ == "__main__":
-    import MySQLdb
-    import sys
 
     uname, psswd, db = sys.argv[1], sys.argv[2], sys.argv[3]
 
