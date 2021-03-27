@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""Module of 
+"""
 if __name__ == "__main__":
+    """[summary]
+    """
     import MySQLdb
     import sys
 
@@ -13,4 +17,5 @@ if __name__ == "__main__":
     state = cur.fetchall()
     for states in state:
         print(states)
+    cur.close()
     db.close()
