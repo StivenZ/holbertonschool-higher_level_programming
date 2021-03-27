@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""Module on MySQLdb"""
+"""Module on MySQLdb
+"""
 if __name__ == "__main__":
-    """Filter state on user input"""
+    """Filter state on user input
+    """
     import MySQLdb
     import sys
 
@@ -12,8 +14,8 @@ if __name__ == "__main__":
                          passwd=psswd, db=db, port=3306)
     cur = db.cursor()
 
-    cur.execute("""SELECT * FROM states WHERE name = (%s)
-                ORDER BY id""", (state_name,))
+    cur.execute("""SELECT * FROM states WHERE name = {}
+                ORDER BY id""".format(state_name))
     state = cur.fetchall()
     print(state[0])
     cur.close()
