@@ -12,8 +12,8 @@ if __name__ == "__main__":
                          passwd=psswd, db=db, port=3306)
     cur = db.cursor()
 
-    cur.execute("""SELECT name FROM cities WHERE state_id =
-                (SELECT id FROM states WHERE states.name LIKE BINARY (%s))
+    cur.execute("""SELECT * FROM cities WHERE state_id =
+                (SELECT id FROM states WHERE name = (%s))
                  ORDER BY cities.id""", (state_name,))
     cities = cur.fetchall()
     for city in cities:
