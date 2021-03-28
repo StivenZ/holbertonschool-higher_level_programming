@@ -18,6 +18,6 @@ if __name__ == "__main__":
                 ORDER BY states.id ASC""".format(state_name))
     state = cur.fetchall()
     for states in state:
-        print(state[0])
+        print(states)
     cur.close()
     db.close()
