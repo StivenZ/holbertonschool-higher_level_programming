@@ -1,3 +1,3 @@
 #!/bin/bash
 # display a request's 200 status
-curl -sL GET $1
+curl -s -L -X GET  $1
