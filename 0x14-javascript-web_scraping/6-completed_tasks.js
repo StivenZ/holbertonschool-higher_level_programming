@@ -23,5 +23,11 @@ request(url, function (error, response, body, algo) {
       userDict[i.userId] = completed;
     }
   }
+  for (const tasks of Object.keys(userDict)) {
+    if (userDict[tasks] === 0) {
+      delete userDict.tasks;
+    }
+  }
+
   console.log(userDict);
 });
