@@ -24,7 +24,7 @@ request(url, function (error, response, body, algo) {
     }
   }
   for (const tasks of Object.keys(userDict)) {
-    if (userDict[tasks] === 0) {
+    if (userDict[tasks] === '0') {
       delete userDict.tasks;
     }
   }
